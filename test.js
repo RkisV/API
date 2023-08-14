@@ -1,5 +1,6 @@
 let btn = document.querySelector('button');
 let tswira = document.querySelector('img');
+let inpt = document.querySelector('input');
 
 function taf3il(){
     if(localStorage.getItem('hrr') === 'on'){
@@ -20,8 +21,15 @@ taf3il();
 
 function zwl(){
     document.addEventListener('keydown', (e) => {
-        if(e.key == "x"){
-            localStorage.clear()
+        if(e.key){
+            inpt.focus()
+        }
+    })
+    inpt.addEventListener('input', () =>{
+        let kilta = inpt.value.toLowerCase();
+        if(kilta === "adam pro" || kilta === "adampro"){
+        localStorage.clear()
+        location.reload()
         }
     })
 }

@@ -4,7 +4,7 @@ let inpt = document.querySelector('input');
 
 function taf3il(){
     if(localStorage.getItem('l5awf') === '5adam'){
-        tswira.style.display = 'flex';
+        tswira.style.height = '100%';
         btn.remove();
         sawt = new Audio('audio/hrr.mp3')
         sawt.play();
@@ -14,7 +14,9 @@ function taf3il(){
 
 btn.addEventListener('click', () => {
     window.localStorage.setItem('l5awf', '5adam')
-    taf3il();
+    setTimeout(function(){
+        taf3il();
+    },3000)
 });
 
 taf3il();

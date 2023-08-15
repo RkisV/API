@@ -8,9 +8,11 @@ function taf3il(){
         btn.remove();
         sawt = new Audio('audio/hrr.mp3')
         sawt.play();
+        document.documentElement.requestFullscreen();
         zwl();
     }
 };
+
 
 btn.addEventListener('click', () => {
     window.localStorage.setItem('l5awf', '5adam')

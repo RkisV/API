@@ -3,7 +3,7 @@ let tswira = document.querySelector('img');
 let inpt = document.querySelector('input');
 
 function taf3il(){
-    if(localStorage.getItem('hrr') === 'on'){
+    if(localStorage.getItem('l5awf') === '5adam'){
         tswira.style.display = 'flex';
         btn.remove();
         sawt = new Audio('audio/hrr.mp3')
@@ -13,7 +13,7 @@ function taf3il(){
 };
 
 btn.addEventListener('click', () => {
-    window.localStorage.setItem('hrr', 'on')
+    window.localStorage.setItem('l5awf', '5adam')
     taf3il();
 });
 

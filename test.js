@@ -1,5 +1,5 @@
 let btn = document.querySelector('button');
-let tswira = document.querySelector('img');
+let tswira = document.querySelector('.bg');
 let inpt = document.querySelector('input');
 
 function taf3il(){

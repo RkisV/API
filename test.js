@@ -1,10 +1,12 @@
 let btn = document.querySelector('button');
 let tswira = document.querySelector('.bg');
 let inpt = document.querySelector('input');
+let txt = document.querySelector('.bg h1');
 
 function taf3il(){
     if(localStorage.getItem('l5awf') === '5adam'){
         tswira.style.height = '100%';
+        txt.style.display = "flex"
         btn.remove();
         sawt = new Audio('audio/hrr.mp3')
         sawt.play();
@@ -37,4 +39,5 @@ function zwl(){
         }
     })
 }
+
 

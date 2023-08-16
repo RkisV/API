@@ -20,6 +20,11 @@
     scroll-behavior: smooth;
 }
 
+@font-face{
+    font-family: "hrr";
+    src: url(font/Another\ Danger\ -\ Demo.otf);
+}
+
     body{
         background-color: #000500;
         display: flex; 
@@ -62,12 +67,29 @@
         width: 100%;
         background: url(images/redFace.jpg);
         background-size: cover;
-        transition: 0.3s ease;
+        transition: 0.4s ease;
+        overflow: hidden;
+    }
+
+    h1{
+        font-family: "hrr";
+        font-size: 2.5vw;
+        z-index: 1;
+        color: white;
+        bottom: 1vw;
+        right: 1vw;
+        letter-spacing: 7px;
+        color: white;
+        filter: drop-shadow(2px 5px red);
+        position: fixed;
+        display: none;
     }
     
     </style>
 
-    <div class="bg"></div>
+    <div class="bg">
+        <h1>I see you</h1>
+    </div>
 <body>
     <button>hello</button>
 </body>
